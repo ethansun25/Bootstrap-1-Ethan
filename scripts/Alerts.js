@@ -1,3 +1,4 @@
+/*
 let name = prompt("Enter your name below. (It will be used to find your social security number, nothing suspicous) ");
 let socialsecurity = Math.random();
 document.getElementById("userInfo").innerHTML = name + ', here is your credit card number! ' + socialsecurity;

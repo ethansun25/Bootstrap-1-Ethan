@@ -14,6 +14,8 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
         <link rel = "icon" type = "image/jpeg" href = "images/bigMoney.jpeg"/>
         <style>
+            .navbar {margin-bottom: 20px;}
+            /*Why is navbar smaller on this page?*/
             h1 {color: royalblue; text-shadow: 0 0 4px #c32148;}
             p {color: darkkhaki; margin-left: 20%; margin-right:  20%;}
             body {text-align: center; animation: strobe .3s infinite; animation-play-state: var(--playstate, paused); background-image: radial-gradient(blue, red, purple, pink, yellow);}
@@ -25,8 +27,7 @@
             #userInfo {font-size: 40px; color: white; outline-color: black; text-shadow: 4px 2px #ff0000;animation: titleStrobe linear 3s infinite;}
             .blockquote-footer {margin-top: 10px;}
             blockquote {margin-top: 10px}
-            .navbar {margin-bottom: 20px;}
-            /*Why is navbar smaller on this page?*/
+            #gallery {margin: 30px}
             @keyframes strobe {
                 20% {
                     background-image:  url("images/pizza.jpeg");   
@@ -103,11 +104,11 @@
                 <li> The Graduate (1967) ... </li>
                 <li> On the Waterfront (1954) </li>
             </ul>
-            <p class = "pizza">
+            <p class = "pizza text-warning">
                 Crust Pizza for you'll love flavor just is kneade just from a classic Romano cheese. For hot crust bite. It's and Tossed of sweet a large 1-topped dough and you. Italian taste thentic Hand you'll now call Domino's; the hot crust for just Pizza for just is to our new PESTO CRUST PIZZA. Call love flavor just sensation, hand Tossed of sweet and of sweet baked dough and baked dough andmade just delicious created topping our Classic Hand authe distinctive from Domino's the Pesto is crust from Domino's an.
             </p>
             <a href = "pages/dollar.html">
-                <img class = "pizza" alt = "pizza" src = "images/pizza.jpeg">
+                <img class = "pizza img-fluid" alt = "pizza" src = "images/pizza.jpeg">
             </a>
         </div>
         <div>
@@ -116,7 +117,34 @@
                 <p class = "blockquote-footer" margin-top = "50px"> Mikhcl lessrd </p>
             </blockquote>
             <p id = "userInfo"></p>
-            <input type = "button" class = "btn" id = "audioplayer" value = "&#254;">
+            <input type = "button" class = "btn btn-lg" id = "audioplayer" value = "&#254;">
+        </div>
+        <div id = "gallery" class = "carousel slide" data-bs-ride = "carousel">
+            <!-- Bottom buttons to select slide -->
+            <div class = "carousel-indicators">
+                <button type = "button" data-bs-target = "#gallery" data-bs-slide-to = "0" class = "active"></button>
+                <button type = "button" data-bs-target = "#gallery" data-bs-slide-to = "1"></button>
+                <button type = "button" data-bs-target = "#gallery" data-bs-slide-to = "2"></button>
+            </div>
+            <!-- Carousel contents -->
+            <div class = "carousel-inner">
+                <div class = "carousel-item active">
+                    <img src = "images/bucks.jpg" alt = "dollars" class="d-block w-100">
+                </div>
+                <div class = "carousel-item">
+                    <img src = "images/vildhjarta.jpg" alt = "vildhjarta"  class="d-block w-100">
+                </div>
+                <div class = "carousel-item">
+                    <img src = "images/light.jpg" alt = "album cover"  class="d-block w-100">
+                </div>  
+            </div>
+            <!-- Next/Back buttons -->
+            <button class = "carousel-control-prev" type = "button" data-bs-target = "#gallery" data-bs-slide = "prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class = "carousel-control-next" type = "button" data-bs-target = "#gallery" data-bs-slide = "next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
         </div>
         <script src = "scripts/Alerts.js"></script>
         <script defer src = "scripts/Buttons.js"></script>

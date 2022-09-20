@@ -1,2 +1,5 @@
-1. Worked on basic Javascript
-2. Advanced CSS/animations
+Elements:
+1. Carousel
+2. Colors
+3. Images
+4. Buttons

@@ -1,3 +1,3 @@
-document.getElementById("flashOn").addEventListener("click", flashOn => {document.body.style.setProperty("--playstate", "running")})
-document.getElementById("flashOff").addEventListener("click", flashOff => {document.body.style.setProperty("--playstate", "paused")})
+document.getElementById("flashOn").addEventListener("click", flashOn => {document.body.style.setProperty("--playstate", "running"); document.getElementById('flashOff').disabled = false; document.getElementById("flashOn").disabled = true;})
+document.getElementById("flashOff").addEventListener("click", flashOff => {document.body.style.setProperty("--playstate", "paused"); document.getElementById('flashOn').disabled = false; document.getElementById('flashOff').disabled = true;})
 document.getElementById("audioplayer").addEventListener("click", playAudio => {new Audio("audio/happysong.mp3").play()})

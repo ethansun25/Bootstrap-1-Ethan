@@ -25,6 +25,8 @@
             #userInfo {font-size: 40px; color: white; outline-color: black; text-shadow: 4px 2px #ff0000;animation: titleStrobe linear 3s infinite;}
             .blockquote-footer {margin-top: 10px;}
             blockquote {margin-top: 10px}
+            .navbar {margin-bottom: 20px;}
+            /*Why is navbar smaller on this page?*/
             @keyframes strobe {
                 20% {
                     background-image:  url("images/pizza.jpeg");   
@@ -53,9 +55,31 @@
         </style>
     </head>
     <body>
+        <nav class = "navbar navbar-expand-sm bg-dark">
+            <div class = "container-fluid">
+                <ul class = "nav nav-pills">
+                    <li class = "nav-item">
+                        <a class = "navbar-brand text-light">Top G</a>
+                    </li>
+                    <li class = "active nav-item"> 
+                        <a class = "active nav-link">Home</a>
+                    </li>
+                    <li class = "nav-item"><a class = "nav-link" href = "pages/dollar.html">laundry</a></li>
+                    <li class = "nav-item dropdown">    
+                        <a class = "nav-link dropdown-toggle" data-bs-toggle = "dropdown" href = "#">Guides</a>
+                        <ul class = "dropdown-menu">
+                            <!-- the "target = '_blank'" attribute makes link open in a new tab -->
+                            <li><a class = "dropdown-item" target = "_blank" href = "https://www.investopedia.com/insights/what-is-a-pyramid-scheme/">Marketing</a></li>
+                            <li><a class = "dropdown-item" target = "_blank" href = "https://www.investopedia.com/terms/i/insidertrading.asp">Pro Tips</a></li>
+                            <li><a class = "dropdown-item" target = "_blank" href = "https://en.wikipedia.org/wiki/Charles_Ponzi">Role Models</a></li>
+                        </ul> 
+                    </li>
+                </ul>
+            </div>
+        </nav>        
         <div>
-            <input type = "button" id = "flashOn" value = "flashing background on">
-            <input type = "button" id = "flashOff" value = "flashing background off">
+            <input type = "button" class = "btn btn-danger" id = "flashOn" value = "flashing background on">
+            <input type = "button" class = "btn btn-success" id = "flashOff" value = "flashing background off">
         </div>
         <div>
             <h1> Start making money TODAY with this&reg; free online course. </h1>
@@ -92,7 +116,7 @@
                 <p class = "blockquote-footer" margin-top = "50px"> Mikhcl lessrd </p>
             </blockquote>
             <p id = "userInfo"></p>
-            <input type = "button" id = "audioplayer" value = "&#254;">
+            <input type = "button" class = "btn" id = "audioplayer" value = "&#254;">
         </div>
         <script src = "scripts/Alerts.js"></script>
         <script defer src = "scripts/Buttons.js"></script>

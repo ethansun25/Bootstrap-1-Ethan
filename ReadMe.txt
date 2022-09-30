@@ -8,3 +8,6 @@ Elements:
 More Elements:
 1.Popover
 2.Tooltips
+
+Other:
+The nav bar is fairly basic (with the only addition other than link buttons being a dropdown), so I added a tab nav bar with I-frames on dollar.html
